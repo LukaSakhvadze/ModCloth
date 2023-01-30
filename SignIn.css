@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*,*::after,*::before{
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #180148;
+    color:white;
+    font-size:150%;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1{
+    text-align: center;
+    position:relative;
+    cursor:pointer;
+    color:aquamarine;
+    margin:1% 0;
+}
+h1::after{
+    content: "♡";
+    position: absolute;
+    top:0;
+    font-size:70%;
+}
+
+header a:hover, header a:active, header a:visited{
+    color:aquamarine
+}
+header a{
+    color:aquamarine;
+    text-decoration: none;
+}
+/*Main*//*Main*//*Main*//*Main*//*Main*//*Main*//*Main*//*Main*//*Main*//*Main*/
+
+.Signup{
+    background-image: linear-gradient(to top right, rgb(0 168 255), rgb(249 95 230));
+    width:25%;
+    height:65vh;
+    margin-top:5%;
+    border-radius:15px;
+    box-shadow: 20px 20px 20px 5px black;
+}
+
+.Signin{
+    background-image: linear-gradient(to top right, rgb(0 168 255), rgb(249 95 230));
+    width:25%;
+    height:45vh;
+    margin-top:5%;
+    border-radius:15px;
+    box-shadow: 20px 20px 20px 5px black;
+}
+.Sign{
+    display:flex;
+    flex-wrap:wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.Sign h2{
+    color:#160303
+}
+h2{
+    color:aquamarine;
+    text-align: center;
+    margin-top:3%;
+}
+header button{
+    border:2px solid aquamarine;
+    background-image: linear-gradient(135deg,red 0%,black);
+    margin:5% auto 0 auto;
+    font-size:120%;
+    display:flex;
+    padding:0.5% 2% 0.5% 2%;
+    cursor:pointer;
+    color:white;
+    max-width:90%;
+    border-radius:10px;
+    
+}
+header button:hover{
+    transform:scale(1.1)
+}
+
+span{
+    font-size:130%;
+    margin-right:0.5%;
+}
+.inputs{
+    margin-top:7%;
+    display:flex;
+    flex-direction: column;
+    flex-wrap:wrap;
+    align-items: flex-start;
+    margin-left:5%;
+    
+}
+.inputs input{
+    width:95%;
+    margin-bottom:10%;
+    height:3rem;
+    border-radius:30px;
+    padding-left:4%;
+    font-size:70%;
+}
+.terms{
+    text-align: center;
+}
+label{
+    color:black;
+    font-size:70%;
+    margin-left:1%;
+}
+.terms a{
+    text-decoration: none;
+    color:blue;
+}
+
+.SignupButton{
+    width:95%;
+    margin-top:3%;
+    height:3rem;
+    border-radius:30px;
+    font-size:150%;
+    cursor:pointer;
+    color:#000000
+}
+.SigninButton{
+    width:95%;
+    margin-top:3%;
+    height:3rem;
+    border-radius:30px;
+    font-size:150%;
+    cursor:pointer;
+    color:#000000;
+    
+}
+input:focus, button:focus{
+    outline: 2px solid rgb(0, 0, 0);
+}
+
+
+
+@media(max-width: 1120px){
+    .Signup{
+        height:70vh;
+        width:30%;
+    }
+    .Signin{
+        width:30%;
+    }
+    main{
+        font-size:80%
+    }
+}
+@media(max-width: 1000px){
+
+   .Signup{
+    width:40%;
+   }
+    .Signin{
+        width:40%;
+    }
+    .inputs input{
+        height:2rem;
+    }
+    .SigninButton{
+        height: 2.5rem;
+    }
+    .SignupButton{
+        height: 2.5rem;
+    }
+}
+
+@media(max-width: 700px){
+   
+    main{
+        font-size:70%
+    }
+    
+}
+@media(max-width: 450px){
+    .inputs input{
+        height:1.5rem;
+    }
+    .SigninButton{
+        height: 2rem;
+        font-size:120%
+    }
+    .SignupButton{
+        height: 2rem;
+        font-size:120%
+    }
+    .Signup{
+        height:60vh;
+       }
+    .Signin{
+        height:40vh;
+     }
+    
+}
