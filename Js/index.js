@@ -245,22 +245,22 @@ let Introduction2Box2Img=document.querySelector(".Introduction2Box2 img")
 let Introduction2Box3Img=document.querySelector(".Introduction2Box3 img")
 
 Introduction2Box1Img.addEventListener("mouseover",()=>{
-   Introduction2Box1Img.src="Introduction2_1_1.png"
+   Introduction2Box1Img.src="../Images/Introduction2_1_1.png"
 })
 Introduction2Box1Img.addEventListener("mouseout",()=>{
-   Introduction2Box1Img.src="Introduction2_1.png"
+   Introduction2Box1Img.src="../Images/Introduction2_1.png"
 })
 Introduction2Box2Img.addEventListener("mouseover",()=>{
-   Introduction2Box2Img.src="Introduction2_2_1.png"
+   Introduction2Box2Img.src="../Images/Introduction2_2_1.png"
 })
 Introduction2Box2Img.addEventListener("mouseout",()=>{
-   Introduction2Box2Img.src="Introduction2_2.png"
+   Introduction2Box2Img.src="../Images/Introduction2_2.png"
 })
 Introduction2Box3Img.addEventListener("mouseover",()=>{
-   Introduction2Box3Img.src="Introduction2_3_1.png"
+   Introduction2Box3Img.src="../Images/Introduction2_3_1.png"
 })
 Introduction2Box3Img.addEventListener("mouseout",()=>{
-   Introduction2Box3Img.src="Introduction2_3.png"
+   Introduction2Box3Img.src="../Images/Introduction2_3.png"
 })
 
 let Introduction3Box1Img=document.querySelector(".Introduction3Box1 img")
@@ -268,22 +268,22 @@ let Introduction3Box2Img=document.querySelector(".Introduction3Box2 img")
 let Introduction3Box3Img=document.querySelector(".Introduction3Box3 img")
 
 Introduction3Box1Img.addEventListener("mouseover",()=>{
-   Introduction3Box1Img.src="Introduction3_1_1.png"
+   Introduction3Box1Img.src="../Images/Introduction3_1_1.png"
 })
 Introduction3Box1Img.addEventListener("mouseout",()=>{
-   Introduction3Box1Img.src="Introduction3_1.png"
+   Introduction3Box1Img.src="../Images/Introduction3_1.png"
 })
 Introduction3Box2Img.addEventListener("mouseover",()=>{
-   Introduction3Box2Img.src="Introduction3_2_1.png"
+   Introduction3Box2Img.src="../Images/Introduction3_2_1.png"
 })
 Introduction3Box2Img.addEventListener("mouseout",()=>{
-   Introduction3Box2Img.src="Introduction3_2.png"
+   Introduction3Box2Img.src="../Images/Introduction3_2.png"
 })
 Introduction3Box3Img.addEventListener("mouseover",()=>{
-   Introduction3Box3Img.src="Introduction3_3_1.png"
+   Introduction3Box3Img.src="../Images/Introduction3_3_1.png"
 })
 Introduction3Box3Img.addEventListener("mouseout",()=>{
-   Introduction3Box3Img.src="Introduction3_3.png"
+   Introduction3Box3Img.src="../Images/Introduction3_3.png"
 })
 
 function imageListener(imageSource,containerName,productName,quantity,price,backGroundclr){
