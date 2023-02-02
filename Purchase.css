@@ -160,6 +160,9 @@ footer a:active, footer a:hover{
         width:25rem;
         height:20vh;
     }
+    .icons ul{
+        flex-direction: column;
+    }
 }
 @media(max-width:450px) {
     .mainDiv1{

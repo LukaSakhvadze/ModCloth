@@ -943,6 +943,9 @@ footer a:active, footer a:hover{
     .IntroductionFigure2__buttons{    
         bottom:5%;
     } 
+    .icons ul{
+        flex-direction: column;
+    }
 }
 @media(max-width: 500px){
     .header__SearchDiv{
@@ -950,7 +953,7 @@ footer a:active, footer a:hover{
         width:50vw;
     }
     header{
-        margin-bottom:25%;
+        margin-bottom:40%;
     }
     .buyNow{
         height:8vh;
@@ -962,6 +965,13 @@ footer a:active, footer a:hover{
     .buyNow span{
         inset:3px
     }
+    header nav ul{
+        display: flex;
+        flex-flow: column wrap;
+        align-items: flex-start;
+        margin-left:3%;
+        
+    }
 }
 
 @media(max-width: 400px){
@@ -970,7 +980,7 @@ footer a:active, footer a:hover{
         width:50vw;
     }
     header{
-        margin-bottom:25%;
+        margin-bottom:65%;
     }
     .header__div1{
         margin-bottom:20%;
@@ -997,7 +1007,7 @@ footer a:active, footer a:hover{
         width:50vw;
     }
     header{
-        margin-bottom:40%;
+        margin-bottom:65%;
     }
     .header__div2{
         margin-bottom:25%;

@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*,*::after,*::before{
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #180148;
+    color:black;
+    font-size:150%;
+    font-family: 'Roboto', sans-serif;
+    min-height:100vh;
+    display:flex;
+    flex-direction: column;
+}
+
+h1{
+    text-align: center;
+    position:relative;
+    cursor:pointer;
+    color:aquamarine;
+    margin:1% 0;
+}
+h1::after{
+    content: "♡";
+    position: absolute;
+    top:0;
+    font-size:70%;
+}
+header a:hover, header a:active, header a:visited{
+    color:aquamarine
+}
+header a{
+    color:aquamarine;
+    text-decoration: none;
+}
+header{
+    margin-bottom:3%;
+}
+/*header*//*header*//*header*//*header*//*header*//*header*//*header*//*header*/
+
+.container{
+    min-height: 70vh;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow:column wrap;
+    
+}
+
+.container form{
+    background-color: #fff;
+    box-shadow:0px 10px 15px black;
+    padding:1%;
+    width:40%;
+    padding-top:5%;
+    border-radius:10px
+    
+}
+
+.container form .inputBox{
+    margin-top:5%;
+}
+
+.inputBox span{
+    display:block;
+    color:#999;
+    padding-bottom:1%;
+}
+
+.inputBox select, .inputBox input{
+    width:100%;
+    border:1px solid #999;
+    padding:1%;
+    border-radius:10px;
+    color:rgb(56, 53, 53);
+}
+.cvv-input{
+    text-indent: 3%;
+}
+.flexBox{
+    display:flex;
+    gap:10%;
+}
+
+.flexBox .inputBox{
+    flex: 1 1 25%;
+}
+
+.submit-btn{
+    background-image: linear-gradient(to right, rgb(0 168 255), rgb(249 95 230));
+    width:100%;
+    height:8vh;
+    margin-top:5%;
+    padding:1.5%;
+    cursor:pointer;
+    font-size:150%;
+    border-radius:10px;
+    transition:0.2s linear;
+    color:white;
+}
+
+.submit-btn:hover{
+    opacity:0.8;
+    letter-spacing:5px;
+}
+
+.container .card-container{
+    margin-bottom:-6%;
+    position: relative;
+    height:17rem;
+    width:33rem;
+}
+
+.front {
+    position: absolute;
+    top:0;
+    left:0;
+    height:100%;
+    width:100%;
+    background-image: linear-gradient(to right, rgb(0 168 255), rgb(249 95 230));
+    border-radius:5px;
+    backface-visibility: hidden;
+    box-shadow:0px 15px 25px -20px black;
+    transform:perspective(1000px) rotateY(0deg);
+    transition:transform 1s ease-out
+}
+.front .image{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top:1%;
+    padding-right:2%;
+}
+
+img{
+    width:5rem;
+}
+.visa{
+    width:10rem;
+}
+
+.card-number-box{
+    padding:5%;
+    color:white;
+    font-size:110%;
+}
+.flexbox{
+    display:flex;
+}
+
+.flexbox .box:nth-child(1){
+    margin-right:auto;
+}
+
+.flexbox .box{
+    color:white;
+    padding:5%;
+}
+.backSide{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background-image: linear-gradient(to right, rgb(0 168 255), rgb(249 95 230));
+    border-radius:5px;
+    backface-visibility: hidden;
+    text-align: right;
+    box-shadow:0px 15px 25px -20px black;
+    padding-top:5%;
+    transform:perspective(1000px) rotateY(180deg);
+    transition:transform 1s ease-out
+}
+
+.blackLine{
+    background-color: black;
+    width:100%;
+    height:3rem
+}
+
+.cvvInfo{
+    display:flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-right:5%;
+    gap:1.5rem;
+    color:#333;
+    margin-top:6%
+}
+.cvvInfo span{
+    color:white;
+}
+.cvvInfoBox{
+    background-color: #fff;
+    height:2rem;
+    width:90%;
+    border-radius:5px;
+    
+}
+main a:hover, main a:active, main a:visited{
+    color:white
+}
+main a{
+    color:white;
+    text-decoration: none;
+}
+main{
+    margin-bottom:3%;
+}
+
+/*media*//*media*//*media*//*media*//*media*//*media*//*media*//*media*//*media*/
+
+@media(max-width:1520px){
+    .flexBox{
+        gap:2%;
+    }
+}
+@media(max-width:1367px){
+    .flexBox{
+        flex-direction: column;
+    }
+    .cvv-input{
+        text-indent: 1%;
+    }
+    .cvvInfo{
+        gap:1rem;
+    }
+    .container form{
+        width:80%;
+    }
+    .container .card-container{
+        width:60%;
+    }
+}
+@media(max-width:600px){
+    .container .card-container{
+        height:15rem;
+    }
+    .submit-btn{
+        font-size:100%;
+    }
+    .container .card-container{
+        width:70%;
+    }
+}
+@media(max-width:430px){
+    .container form{
+        width:90%;
+    }
+    .container .card-container{
+        width:80%;
+    }
+}
+@media(max-width:380px){
+    .container form{
+        width:90%;
+    }
+    .container .card-container{
+        height:10rem;
+        font-size:60%;
+    }
+    img{
+        width:3rem;
+    }
+    .visa{
+        width:6rem;
+    }
+    .blackLine{
+        height:2rem;
+    }
+    .cvvInfo{
+        gap:1rem;
+    }
+    .cvvInfo img{
+        width:4rem;
+    }
+    .cvvInfoBox{
+        height:1.5rem;
+        padding:1%;
+    }
+}
